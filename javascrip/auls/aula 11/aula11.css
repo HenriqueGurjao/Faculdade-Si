@@ -1,0 +1,22 @@
+.botao{
+	width:20pt;
+	height:20pt;
+	background-color:#76A;
+	color:#FFF
+}
+
+.visor{
+	font-size:1em;
+	color:#F00
+}
+
+#div1{
+	width:100px;
+	height:100px;
+	border:1px solid #000;
+	background-color:#FFF;
+	position:absolute;
+	left:10px;
+	top:300px
+	
+}

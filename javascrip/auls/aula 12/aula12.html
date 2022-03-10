@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+ <head>
+  <title> Aula 12 </title>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='aula12.css'>
+ </head>
+ <body>
+ <!-- Slider -->
+ <div id='dvSlider' onmouseover='parar()' onmouseout='iniciaSlider()'>
+	<input type ='button' value = "<" id='bt' onclick='troca(-1)' />
+	<input type ='button' value = ">" id='bt' onclick='troca(1)' />
+ <div>
+
+<!-- Relogio digital-->
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1>Relogio Digital</h1>
+	<input type='text' id='rel'>
+ 
+<!-- Abertura de Janelas -->
+<br><br><br><br>
+ 
+	<p id='mensagem'> Mensagem</p>
+	<button type='button' onclick='executar()'>Executar</button>
+	<button type='button' onclick='verificar()'>Verificar</button>
+ 
+<!-- outro exemplo - movendo a janela de forma positiva ou negativa -->
+	<button type='button' onclick='moverPositivo()'>Mover Positivo</button>
+	<button type='button' onclick='moverNegativo()'>Mover Negativo</button>
+	<button type='button' onclick='moverUnico()'>Mover Unico</button>
+
+
+
+ <script src='aula12.js'></script>
+ </body>
+ </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+ <head>
+  <title> Aula 10 </title>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='aula10.css'>
+  </head>
+<body>
+<a href onmouseover='mudaCor("blue")'>Azul</a>
+<a href onmouseover='mudaCor("yellow")'>Amarelo</a>
+<a href onmouseover='mudaCor("red")'>Vermelho</a>
+<a href onmouseover='mudaCor("green")'>Verde</a>
+<a href onmouseover='mudaCor("gray")'>Cinza</a>
+<a href onmouseover='mudaCor("orange")'>Laranja</a><br><br>
+
+<!-- exemplo com botão -->
+
+<button onclick ='displayDate()'>Data</button>
+<p id='a'></p>
+
+<!-- Exemplo de soma de 2 numeros -->
+
+<h1>Somatório</h1>
+
+<input type ='number' id ='n1' /> +
+<input type ='number' id ='n2' />
+<button onclick='somar()'>Soma</button>
+<div id='resp'>
+
+<!-- Exemplo de calculo de media -->
+<h1>Média</h1>
+
+<p>Primeira nota <input type ='number' id ='nota1' /></p>
+<p>Segunda nota<input type ='number' id ='nota2' /></p>
+
+
+<button onclick='calcularMedia()'>Media</button><br>
+
+<!--Leia um numero em metros e exiba convertido em centimetros e milimetros -->
+
+<h1>Conversão</h1>
+
+Numero:<input type ='number' id ='m' placeholder='numero em metros' />
+<div id='cm' onmouseenter='convcm()'>Passe o mouse para o valor em cm</div>
+<div id='mm' onmouseenter='convmm()'>Passe o mouse para o valor em mm</div>
+
+<!--Criando um formulário usando o contador-->
+
+<form method ="POST" action ='aula10.py'>
+<p><input type='button' value="Digitar nome" onclick="nome=prompt('Nome: ', '')"/>
+<input type='button' value="Digitar email" onclick="email=prompt('E_mail: ', '')"/>
+<input type='button' value="Cadastrar" onclick='escrever(this.form.Area)' /></p>
+<p><textarea rows=10 cols=40 name='Area'></textarea></p>
+</form>
+
+
+
+<script src='aula10.js'></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 9 - DOM (Document Object Model)</title>
+    <style>
+		body{
+			background:rgb(68,125,199);
+			color:white;
+			font:Bodoni normal 18pt
+		}
+	
+		#teste{
+			   font:normal 20pt Verdana;
+			   background:yellow;
+			   color:blue;
+			   width:200px;
+			   height:200px;
+			   text-align:center;
+			   line-height:200px
+		}
+	</style>
+</head>
+<body>
+	<h1>Aprendendo DOM</h1>
+	<p>Boa noite!</p>
+	<p>Boa <i>semana!</i></p>
+	
+	<div id='a'>Testando</div>
+	<div name='b'>Testando 1</div>
+	<div class='c'>Testando 2</div>
+	
+<!--Eventos do mouse -->
+
+	<!--<div id='teste' onclick='clicar()' onmouseenter='entrar()' 
+	onmouseout='sair()'>Eventos</div>-->
+    <div id='teste'>Eventos</div>
+
+<!-- Exemplo com imagem -->
+
+	<h1>Lâmpada</h1>
+	<img src='apagada.jpg' id='luz' onmouseover='acendeLampada()' 
+	onmouseout='apagaLampada()' onclick='quebraLampada()' />
+	
+<!-- exemplo de onmouseup e onmousedown -->
+	<h1>Div</h1>
+	<div onmousedown='mDown(this)' onmouseup='mUp(this)' style='background-color:#9379BB;
+	width:130px; height:70px; padding:40px'>Clica e segura</div>
+
+
+   
+   <script src="aula9.js"></script>
+</body>
+</html>
